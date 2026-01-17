@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Icons for back arrow -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <title>Todo List App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <a href="/" class="back-btn">
+          <i class="bi bi-arrow-left"></i> Back to Home
+        </a>
+        <h1>To-Do App</h1>
+      </div>
+      <!-- login -->
+      <div id="login-view" class="form-section">
+        <h2 class="loginText">Login</h2>
+        <form id="login-form">
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="user@example.com" required />
+          </div>
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="••••••" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Log In</button>
+        </form>
+        <button id="to-signup-btn" class="btn btn-secondary">
+          Don't have an account? Sign Up
+        </button>
+      </div>
+      <!-- sign up -->
+      <div id="signup-view" class="form-section hidden">
+        <h2 style="margin-bottom: 15px">Sign Up</h2>
+        <form id="signup-form">
+          <div class="input-group">
+            <label>First Name</label>
+            <input type="text" placeholder="John" class="firstName" required />
+
+            <label>Middle Initial</label>
+            <input type="text" placeholder="J" class="middleName"  />
+
+            <label>Last Name</label>
+            <input type="text" placeholder="Doe" class="lastName" required />
+          </div>
+
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="user@example.com" required />
+          </div>
+
+          <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="Create a password" required />
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+        <button id="to-login-btn" class="btn btn-secondary">
+          Already have an account? Log In
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="./login.js"></script>
+</html>
